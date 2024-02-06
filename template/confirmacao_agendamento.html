@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HomeCare - Confirmação de Agendamento</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='layout.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container" id="branding">
+            <h1>Home Care</h1>
+        </div>
+    </header>
+    <div class="container">
+        <section id="confirmacao_agendamento">
+            <h2>Confirmação de Agendamento</h2>
+            <p>O seu serviço foi agendado com sucesso. Entraremos em contato em breve para confirmar os detalhes.</p>
+            <a href="{{ url_for('index') }}">Voltar para a página inicial</a>
+            <a href="{{ url_for('avaliacao') }}" class="btn-redirecionar">Avaliar Serviço</a>
+        </section>
+    </div>
+</body>
+</html>

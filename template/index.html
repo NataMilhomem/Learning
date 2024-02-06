@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeCare</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='layout.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='welcome.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container" id="branding">
+            <h1>Home Care</h1>
+        </div>
+    </header>
+    <div class="container">
+        <section id="welcome" class="welcome-page">
+            <h2>Bem-vindo ao HomeCare!</h2>
+            <p>Escolha entre fazer login ou cadastrar-se.</p>
+            <div class="center-text">
+                <a href="/login" class="btn">Login</a>
+                <a href="/cadastro" class="btn">Cadastro</a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

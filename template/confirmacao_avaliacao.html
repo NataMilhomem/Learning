@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HomeCare - Confirmação de Avaliação</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='layout.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container" id="branding">
+            <h1>Home Care</h1>
+        </div>
+    </header>
+    <div class="container">
+        <section id="confirmacao_avaliacao">
+            <h2>Confirmação de Avaliação</h2>
+            <p>A sua avaliação foi recebida. Agradecemos por compartilhar sua opinião!</p>
+            <a href="{{ url_for('index') }}">Voltar para a página inicial</a>
+        </section>
+    </div>
+</body>
+</html>

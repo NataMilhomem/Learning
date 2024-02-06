@@ -1,0 +1,103 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #4CAF50;
+    color: white;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 4px solid;
+    text-align: center;
+}
+
+header #branding {
+    margin: 0 auto;
+}
+
+header #branding h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+section#avaliacao {
+    padding: 50px 0;
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+    color: #3498db;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-image: url('star.png'); /* Adicione o caminho para sua imagem de estrela */
+    background-size: cover;
+    order: 1; /* Isso ajusta a ordem de exibição das estrelas */
+}
+
+.rating label:before {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+
+.rating input:checked ~ label {
+    background-image: url('filled-star.png'); /* Adicione o caminho para sua imagem de estrela preenchida */
+}

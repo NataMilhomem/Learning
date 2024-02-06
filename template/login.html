@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HomeCare - Login</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='layout.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container" id="branding">
+            <h1>Home Care</h1>
+        </div>
+    </header>
+    <div class="container">
+        <section id="login">
+            <h2>Login</h2>
+            <form action="{{ url_for('login') }}" method="post">
+                <label for="username">Nome de Usuário:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+                <input type="submit" value="Login">
+            </form>
+            <p>Não possui uma conta? <a href="/cadastro">Cadastre-se aqui</a>.</p>
+        </section>
+    </div>
+</body>
+</html>
